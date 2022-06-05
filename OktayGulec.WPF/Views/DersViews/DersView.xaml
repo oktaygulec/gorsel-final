@@ -1,0 +1,50 @@
+﻿<Window x:Class="OktayGulec.WPF.Views.DersViews.DersView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OktayGulec.WPF.Views.DersViews"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        Height="320" 
+        Width="300"
+        Title="DersView">
+    <Border Padding="10" Margin="0 20">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="35"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBox Name="txtAd" VerticalContentAlignment="Center"
+                     materialDesign:HintAssist.Hint="Ad"
+                     Text="{Binding Ad, UpdateSourceTrigger=Explicit}"/>
+            <ComboBox Name="cbHocalar"
+                      ItemsSource="{Binding Hocalar}"
+                      SelectedItem="{Binding SelectedHoca, UpdateSourceTrigger=Explicit}"
+                      DisplayMemberPath="AdSoyad"
+                      Grid.Row="1"
+                      materialDesign:HintAssist.Hint="Hoca seçin" />
+            <TextBox Name="txtVize" Grid.Row="2" VerticalContentAlignment="Center"
+                         materialDesign:HintAssist.Hint="Vize"
+                     Text="{Binding Vize, UpdateSourceTrigger=Explicit}"/>
+            <TextBox Name="txtFinal" Grid.Row="3" VerticalContentAlignment="Center"
+                         materialDesign:HintAssist.Hint="Final"
+                     Text="{Binding Final, UpdateSourceTrigger=Explicit}"/>
+            <StackPanel Orientation="Horizontal" 
+                        HorizontalAlignment="Right"
+                        VerticalAlignment="Bottom" Grid.Row="4">
+                <Button Name="btnIptal" Content="İptal" Margin="3"
+                        Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                        Click="btnIptal_Click" IsCancel="True"/>
+                <Button Name="btnTamam" Content="Tamam" Margin="3 3 0 3"
+                        Click="btnTamam_Click" IsDefault="True"/>
+            </StackPanel>
+
+        </Grid>
+    </Border>
+</Window>

@@ -1,0 +1,95 @@
+﻿<Window x:Class="OktayGulec.WPF.Views.KullaniciViews.LoginWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:OktayGulec.WPF.Views.KullaniciViews" 
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        mc:Ignorable="d"
+        Title="LoginWindow" Height="450" Width="300"
+        Background="Transparent"
+        FontFamily="{DynamicResource MaterialDesignFont}"
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
+    <Border Padding="10" CornerRadius="10" Background="{DynamicResource MaterialDesignPaper}">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="170"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <Border MouseDown="Border_MouseDown" VerticalAlignment="Center">
+                <StackPanel>
+                    <Grid>
+                        <TextBlock Text="Lütfen Giriş Yapın" 
+                           HorizontalAlignment="Center"
+                           VerticalAlignment="Center"
+                           Style="{StaticResource MaterialDesignHeadline6TextBlock}"
+                                   Foreground="#1f446a"/>
+                        <Button Name="btnClose"
+                            VerticalAlignment="Center" HorizontalAlignment="Right"
+                            Style="{StaticResource MaterialDesignFlatButton}"
+                            Click="btnClose_Click">
+                            <materialDesign:PackIcon Kind="WindowClose"/>
+                        </Button>
+                    </Grid>
+                    <Separator Style="{StaticResource MaterialDesignDarkSeparator}"/>
+                </StackPanel>
+            </Border>
+
+            <StackPanel VerticalAlignment="Center" Margin="3 0" Grid.Row="1">
+
+                <materialDesign:PackIcon Kind="ShieldLock" HorizontalAlignment="Center"
+                                         Width="100" Height="100"
+                                         Foreground="{StaticResource PrimaryHueDarkBrush}"/>
+                <TextBlock Name="txtErrorText"
+                           Text="* Kullanıcı adınız veya parolanız yanlış."
+                           FontSize="11"
+                           HorizontalAlignment="Center"
+                           Margin="0 10 0 0" 
+                           Foreground="Red"
+                           Visibility="Hidden"/>
+            </StackPanel>
+
+            <Grid Grid.Row="2">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="30"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="35"/>
+                    <RowDefinition Height="100"/>
+                </Grid.RowDefinitions>
+                <materialDesign:PackIcon Kind="User" Height="20" Width="20"
+                                         Foreground="#1f446a"
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Center"/>
+                <TextBox Name="txtEPosta"
+                         Grid.Row="0" Grid.Column="1"
+                         materialDesign:HintAssist.Hint="E Posta Adresi"
+                         VerticalContentAlignment="Center"/>
+
+                <materialDesign:PackIcon Kind="Key" Grid.Row="1" Height="20" Width="20"
+                                         Foreground="#1f446a"
+                                         VerticalAlignment="Center"
+                                         HorizontalAlignment="Center"/>
+                <PasswordBox Name="txtParola"
+                             Grid.Row="1" Grid.Column="1"
+                             materialDesign:HintAssist.Hint="Parola"
+                             VerticalContentAlignment="Center"/>
+
+                <Button Name="btnLogin"
+                        Content="Login" Grid.Row="2" Grid.ColumnSpan="2"
+                        Style="{StaticResource MaterialDesignRaisedAccentButton}"
+                        Foreground="White"
+                        IsDefault="True"
+                        Click="btnLogin_Click"/>
+            </Grid>
+
+        </Grid>
+    </Border>
+</Window>

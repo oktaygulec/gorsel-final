@@ -1,0 +1,15 @@
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.DatabaseAccessLayer.dll.config
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.DatabaseAccessLayer.dll
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.DatabaseAccessLayer.pdb
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\EntityFramework.dll
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.EntityLayer.dll
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.EntityLayer.pdb
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\OktayGulec.EntityLayer.dll.config
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\EntityFramework.xml
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\obj\Debug\OktayGulec.DatabaseAccessLayer.csproj.AssemblyReference.cache
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\obj\Debug\OktayGulec.DatabaseAccessLayer.csproj.CoreCompileInputs.cache
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\obj\Debug\OktayGulec.DatabaseAccessLayer.csproj.CopyComplete
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\obj\Debug\OktayGulec.DatabaseAccessLayer.dll
+C:\Users\Miyajinco\source\repos\Finaller\Gorsel\OktayGulec\OktayGulec.DatabaseAccessLayer\obj\Debug\OktayGulec.DatabaseAccessLayer.pdb

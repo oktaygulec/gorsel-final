@@ -1,0 +1,34 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:OktayGulec.WPF.Controls">
+    <Style TargetType="{x:Type controls:DurumItem}">
+        <Setter Property="DurumColor" Value="Red" />
+        <Setter Property="DurumText" Value="Kaldı" />
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type controls:DurumItem}">
+                    <Border Background="Transparent">
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="32" />
+                                <ColumnDefinition />
+                            </Grid.ColumnDefinitions>
+                            <Ellipse Width="16"
+                                     Height="16"
+                                     Fill="{TemplateBinding DurumColor}" 
+                                     Margin="0 0 8 0"/>
+                            <TextBlock Text="{TemplateBinding DurumText}" 
+                                       Grid.Column="1"/>
+                        </Grid>
+                    </Border>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="Durum" Value="True">
+                            <Setter Property="DurumColor" Value="Green" />
+                            <Setter Property="DurumText" Value="Geçti" />
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
