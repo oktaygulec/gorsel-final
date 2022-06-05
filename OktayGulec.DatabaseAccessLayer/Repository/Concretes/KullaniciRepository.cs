@@ -40,7 +40,7 @@ namespace OktayGulec.DatabaseAccessLayer.Repository.Concretes
         {
             var kullaniciVarMi = await GetItem(item.EPosta);
 
-            if (kullaniciVarMi != null)
+            if (kullaniciVarMi != null && kullaniciVarMi.EPosta != eskiEPosta)
                 throw new Exception("Kullanıcı zaten mevcut.");
 
             var kullanici = await GetItem(eskiEPosta);

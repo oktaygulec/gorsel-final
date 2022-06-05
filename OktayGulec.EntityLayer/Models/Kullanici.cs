@@ -11,7 +11,7 @@ namespace OktayGulec.EntityLayer.Models
     [Table("Kullanicilar")]
     public class Kullanici
     {
-        [Key]
+        [Key, DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
         public string EPosta { get; set; }
         public string Parola { get; set; }
